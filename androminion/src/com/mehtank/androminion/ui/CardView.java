@@ -524,6 +524,7 @@ public class CardView extends FrameLayout implements OnLongClickListener, Checka
 			ImageView im = new ImageView(view.getContext());
             im.setImageURI(u);
             im.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            im.setAdjustViewBounds(true);
             v = im;
 		} else {
 			TextView textView = new TextView(view.getContext());
